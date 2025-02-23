@@ -2,6 +2,7 @@
 
 ## Overview
 Task Manager is a dynamic and interactive to-do list application that helps users efficiently manage tasks with a priority-based color system. The app features **adaptive card resizing**, **persistent local storage**, and **dark mode support**, ensuring a smooth and user-friendly experience.
+![image](https://github.com/user-attachments/assets/1f272735-9b77-4747-81e4-75eaf1a1a8da)
 
 ## Features
 - **Priority-Based Task Cards**: Tasks are categorized into **Low, Medium, and High Priority**, with distinct colors.
