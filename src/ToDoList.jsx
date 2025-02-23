@@ -70,11 +70,15 @@ export default function ToDoList() {
 
     return (
         <div className={`container ${darkMode ? "dark-mode" : "light-mode"}`}>
+            <div className="head">
+                <h1>Task Manager</h1>
+                <p>A dynamic to-do list with adaptive card resizing, persistent local storage, and a priority-based color system for efficient task management.</p>
+            </div>
             {/* Theme Toggle */}
             <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
                 {darkMode ? "😉 Light Mode" : "🌙 Dark Mode"}
             </button>
-
+            <hr /><br />
             <div className="layout">
                 {/* Task Input Section (Left Side) */}
                 <div className="task-input-card">
