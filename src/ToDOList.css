@@ -1,0 +1,238 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+/* Light & Dark Mode */
+.container {
+    min-height: 100vh;
+    padding: 20px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.light-mode {
+    background-color: #dedede;
+    color: #010101;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    background: none;
+    border: 2px solid currentColor;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    position: relative;
+    left: 9rem;
+}
+
+.theme-toggle:hover {
+    opacity: 0.8;
+}
+
+/* Layout Container */
+.layout {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Task Input Section (Left Side) */
+.task-input-card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position:sticky;
+    top: 2rem;
+}
+
+.task-input-card h2 {
+    text-align: center;
+}
+
+/* Input Fields */
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.dark-mode button {
+    background-color: #41ffbd;
+    color: #ffffff;
+}
+
+.light-mode button {
+    background-color: #222;
+    color: rgba(255, 255, 255, 0.886);
+}
+
+/* Task List Section (Right Side) */
+.task-list {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+/* Task Cards */
+.task-card {
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.task-card h3 {
+    margin-bottom: 5px;
+}
+/* Priority Label */
+.priority-label {
+    display: inline-block;
+    margin-top: 8px;
+    padding: px ;
+    font-size: 12px;
+    font-weight: bold;
+    /* background: rgba(0, 0, 0, 0.2); */
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+/* Delete Button */
+.delete-btn {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* Ensure the task input card expands when content overflows */
+.task-input-card {
+    min-height: 200px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden; /* Prevents unnecessary scroll */
+}
+
+/* Inputs should expand within the card */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    resize: vertical; /* Allow input expansion */
+}
+
+/* Ensure task cards grow dynamically */
+.task-card {
+    min-height: 120px; /* Start with a reasonable height */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transition: transform 0.3s ease;
+    overflow-wrap: break-word; /* Prevents text from overflowing */
+    word-break: break-word; /* Ensures long words break properly */
+}
+
+.task-card {
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    min-width: 250px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Task Description with Adaptive Expansion */
+.task-description {
+    max-height: 60px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    white-space: pre-wrap;
+}
+
+.task-description.expanded {
+    max-height: 500px; /* Expand smoothly */
+}
+
+.expand-btn {
+    background: none;
+    border: none;
+    color: #ffdd57;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+
+
+
+
+@media (max-width: 468px) {
+    .layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .task-input-card, .task-list {
+        width: 90%;
+    }
+
+    .task-card {
+        width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    .task-card {
+        width: calc(50% - 15px);
+    }
+}
+
+
