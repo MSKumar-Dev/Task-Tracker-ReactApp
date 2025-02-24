@@ -104,7 +104,7 @@ export default function ToDoList() {
                             className="task-card" 
                             style={{ backgroundColor: priorityColors[task.priority] }}
                         >
-                            <h3>{task.title}</h3>
+                            <h3>{task.title.charAt(0).toUpperCase()+task.title.slice(1)}</h3>
                             <span className="priority-label">{task.priority.toUpperCase()}</span>
                             
                             {/* Description with Expand Feature */}
