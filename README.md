@@ -1,7 +1,7 @@
-# Task Manager
+# Task-Tracker-ReactApp
 
 ## Overview
-Task Manager is a dynamic and interactive to-do list application that helps users efficiently manage tasks with a priority-based color system. The app features **adaptive card resizing**, **persistent local storage**, and **dark mode support**, ensuring a smooth and user-friendly experience.
+Task-Tracker is a dynamic and interactive to-do list application that helps users efficiently manage tasks with a priority-based color system. The app features **adaptive card resizing**, **persistent local storage**, and **dark mode support**, ensuring a smooth and user-friendly experience.
 ![image](https://github.com/user-attachments/assets/fd726222-aba4-4bf0-8e68-bf9d1a1b15c2)
 
 
