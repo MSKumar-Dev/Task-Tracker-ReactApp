@@ -63,5 +63,5 @@ This will generate an optimized `dist` folder ready for deployment.
 This project is licensed under the MIT License.
 
 ## Author
-Developed by **Sandeep-Devleloper.**
+Developed by **MSKumar-Dev.**
 
