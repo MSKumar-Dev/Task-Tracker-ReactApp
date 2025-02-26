@@ -6,7 +6,7 @@ export default function ToDoList() {
     const [taskPriority, setTaskPriority] = useState("low");
     const [taskDescription, setTaskDescription] = useState("High Dopamine instability");
     const [taskList, setTaskList] = useState([]);
-    const [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState(false);
     const [expandedTasks, setExpandedTasks] = useState({});  // Track expanded states
 
     // Priority Color Mapping
