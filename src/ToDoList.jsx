@@ -71,7 +71,7 @@ export default function ToDoList() {
     return (
         <div className={`container ${darkMode ? "dark-mode" : "light-mode"}`}>
             <div className="head">
-                <h1>Task Manager</h1>
+                <h1>Task Tracker</h1>
                 <p>A dynamic  Task tracker  with adaptive card resizing, persistent local storage, and a priority-based color system for efficient task management.</p>
             </div>
             {/* Theme Toggle */}
